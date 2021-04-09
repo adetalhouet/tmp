@@ -1,0 +1,25 @@
+---
+kolla_base_distro: "ubuntu"
+kolla_install_type: "source"
+openstack_release: "victoria"
+kolla_internal_vip_address: "10.195.194.216"
+network_interface: "enp129s0f0"
+neutron_external_interface: "enp129s0f1"
+neutron_plugin_agent: "openvswitch"
+enable_neutron_provider_networks: "yes"
+enable_neutron_sriov: "yes"
+neutron_sriov_physnet_mappings:
+  physnet1: enp129s0f1
+kolla_enable_tls_external: "no"
+tempest_image_id:
+tempest_flavor_ref_id:
+tempest_public_network_id:
+tempest_floating_network_name:
+node_custom_config: "/etc/kolla/config"
+#enable_octavia : "no"
+enable_swift : "yes"
+enable_cinder: "yes"
+enable_cinder_backend_lvm: "yes"
+enable_designate: "yes"
+designate_backend: "bind9"
+designate_ns_record: "openstack216.nso.ltec.int.bell.ca"

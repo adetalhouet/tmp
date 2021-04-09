@@ -1,0 +1,8 @@
+apiVersion: oauth.openshift.io/v1
+grantMethod: prompt
+kind: OAuthClient
+metadata:
+  name: keycloak
+redirectURIs:
+- https://oauth-openshift.apps.adt-lab.openshift.openstack216.nso.ltec.int.bell.ca/oauth2callback/keycloak
+secret: openid-client-secret-keycloack

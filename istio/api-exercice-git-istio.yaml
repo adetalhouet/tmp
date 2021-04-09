@@ -1,0 +1,49 @@
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  generation: 2
+  name: api-exercise-git
+  namespace: test
+spec:
+  host: api-exercise-git
+  subsets:
+  - labels:
+      app: api-exercise-git
+    name: v1
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: api-exercise-git
+  namespace: test
+spec:
+  gateways:
+  - api-exercise-git-gateway
+  hosts:
+  - '*'
+  http:
+  - match:
+    - uri:
+        prefix: /people  
+    route:
+    - destination:
+        host: api-exercise-git
+        port:
+          number: 8080
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: api-exercise-git-gateway
+  namespace: test
+spec:
+  selector:
+    istio: ingressgateway
+  servers:
+  - hosts:
+    - '*'
+    port:
+      name: http
+      number: 80
+      protocol: HTTP
