@@ -6,7 +6,7 @@ metadata:
   labels:
     deployment: hello
   annotations:
-    apps.open-cluster-management.io/github-branch: master
+    apps.open-cluster-management.io/github-branch: main
     apps.open-cluster-management.io/github-path: acm/application-portability/lab-5-assets/overlays/cluster2
 spec:
   channel:  web-app/web-app-channel
