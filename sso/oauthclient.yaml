@@ -4,5 +4,5 @@ kind: OAuthClient
 metadata:
   name: keycloak
 redirectURIs:
-- https://oauth-openshift.apps.adt-lab.openshift.openstack216.nso.ltec.int.bell.ca/oauth2callback/keycloak
+- https://oauth-openshift.apps.adt-lab.openshift.openstack216.adetalhouet.io/oauth2callback/keycloak
 secret: openid-client-secret-keycloack
