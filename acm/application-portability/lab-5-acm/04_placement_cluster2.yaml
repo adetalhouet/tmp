@@ -6,4 +6,4 @@ metadata:
 spec:
   clusterSelector:
     matchLabels:
-      cluster-id: rosa
+      cluster-id: aws-ca-central-1

@@ -3,4 +3,4 @@ kind: Route
 metadata:
   name: the-route
 spec:
-  host: apps.adetalhouet-lab.7mdz.p1.openshiftapps.com
+  host: apps.us-east-2.ocp.adetalhouet.rhtelco.io

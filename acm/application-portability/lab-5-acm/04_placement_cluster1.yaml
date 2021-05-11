@@ -6,4 +6,4 @@ metadata:
 spec:
   clusterSelector:
     matchLabels:
-      cluster-id: rhpds
+      cluster-id: aws-us-east-2
