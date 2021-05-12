@@ -6,4 +6,4 @@ metadata:
 spec:
   clusterSelector:
     matchLabels:
-      clusterid: cluster1
+      cluster-id: aws-us-east-2
