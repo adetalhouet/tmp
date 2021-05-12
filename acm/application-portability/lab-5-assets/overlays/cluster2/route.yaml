@@ -3,4 +3,4 @@ kind: Route
 metadata:
   name: the-route
 spec:
-  host: apps.ca-central-1.ocp.adetalhouet.rhtelco.io
+  host: web-app.apps.ca-central-1.ocp.adetalhouet.rhtelco.io
