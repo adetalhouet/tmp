@@ -6,8 +6,8 @@ metadata:
   labels:
     name: mongo
   annotations:
-    apps.open-cluster-management.io/github-branch: master
-    apps.open-cluster-management.io/github-path: application-portability/lab-6-assets/overlays/cluster1
+    apps.open-cluster-management.io/github-branch: main
+    apps.open-cluster-management.io/github-path: acm/application-portability/lab-6-assets/overlays/cluster1
 spec:
   channel:  mongo/mongochannel
   placement: 

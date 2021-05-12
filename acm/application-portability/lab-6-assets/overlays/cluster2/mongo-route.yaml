@@ -4,4 +4,4 @@ metadata:
   name: mongo
   namespace: mongo
 spec:
-  host: mongocluster3route
+  host: mongo-cluster2.apps.ca-central-1.ocp.adetalhouet.rhtelco.io
